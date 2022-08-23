@@ -41,7 +41,9 @@ $(document).ready(function(){
                     
                 }
             }
-            $('#tableMain').DataTable();
+            $('#tableMain').DataTable({
+                aaSorting : false
+            });
        }
     });
 })
