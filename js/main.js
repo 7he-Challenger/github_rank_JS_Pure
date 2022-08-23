@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $.get("https://api.github.com/search/users?q=location%3Amadagascar&fbclid=IwAR20tgQ9edAlshoUz5HwfjtitiASGXH32L0H2tudBhqcG4ZojEuu7QSEtXc", function(data, status){
+    $.get("https://api.github.com/search/users?q=location%3Amadagascar&fbclid=IwAR20tgQ9edAlshoUz5HwfjtitiASGXH32L0H2tudBhqcG4ZojEuu7QSEtXc&per_page=100", function(data, status){
        if(data.items.length != 0){
             var bodyLoop = document.getElementById('bodyContainer');
             document.getElementById('loading').remove();
